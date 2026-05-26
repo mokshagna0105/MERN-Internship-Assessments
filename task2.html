@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-size: small;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+        }
+        fieldset{
+            display: grid;
+            row-gap: 5px;
+        }
+        input,textarea{
+            width: 100%vw;
+        }
+        input,textarea::placeholder{
+            font-size: smaller;
+        }
+        button{
+            width: 70px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>User personal information</legend>
+            <label for="">Enter your full name</label>
+            <input type="text" name="" id="" placeholder="Rahul Kumar">
+            <label for="">Enter your email</label>
+            <input type="email" placeholder="geeks@12345@gmail.com">
+            <label for="">Enter your password</label>
+            <input type="password">
+            <label for="">Confirm your password</label>
+            <input type="password">
+            <label for="">Enter your gender</label>
+            <div>
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                    <input type="radio" name="gender">Others
+            </div>
+            <label for="">Enter your Date of Birth</label>
+            <input type="date" placeholder="10 06 2009">
+            <label for="">Enter your address</label>
+            <textarea name="" id="" placeholder="Noida Sector 137"></textarea>
+            <button type="submit">submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
